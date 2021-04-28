@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>438.找到字符串中所有字母异位词 | store house</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="Just store something">
+    <link rel="preload" href="/storehouse-page/assets/css/0.styles.50cbef9e.css" as="style"><link rel="preload" href="/storehouse-page/assets/js/app.89c6b4d2.js" as="script"><link rel="preload" href="/storehouse-page/assets/js/2.36872be9.js" as="script"><link rel="preload" href="/storehouse-page/assets/js/42.35b07141.js" as="script"><link rel="prefetch" href="/storehouse-page/assets/js/10.4cd06e5c.js"><link rel="prefetch" href="/storehouse-page/assets/js/11.25745276.js"><link rel="prefetch" href="/storehouse-page/assets/js/12.8c0c94f2.js"><link rel="prefetch" href="/storehouse-page/assets/js/13.b8739b34.js"><link rel="prefetch" href="/storehouse-page/assets/js/14.9b2a31ca.js"><link rel="prefetch" href="/storehouse-page/assets/js/15.eadaf429.js"><link rel="prefetch" href="/storehouse-page/assets/js/16.4f0d9ddb.js"><link rel="prefetch" href="/storehouse-page/assets/js/17.33f5c585.js"><link rel="prefetch" href="/storehouse-page/assets/js/18.3a7d28ba.js"><link rel="prefetch" href="/storehouse-page/assets/js/19.00200056.js"><link rel="prefetch" href="/storehouse-page/assets/js/20.ec841d58.js"><link rel="prefetch" href="/storehouse-page/assets/js/21.37b51240.js"><link rel="prefetch" href="/storehouse-page/assets/js/22.7398da92.js"><link rel="prefetch" href="/storehouse-page/assets/js/23.efca3ac6.js"><link rel="prefetch" href="/storehouse-page/assets/js/24.07f06442.js"><link rel="prefetch" href="/storehouse-page/assets/js/25.f4dc33ea.js"><link rel="prefetch" href="/storehouse-page/assets/js/26.3db162a8.js"><link rel="prefetch" href="/storehouse-page/assets/js/27.96afb93e.js"><link rel="prefetch" href="/storehouse-page/assets/js/28.4adec476.js"><link rel="prefetch" href="/storehouse-page/assets/js/29.4adaadf3.js"><link rel="prefetch" href="/storehouse-page/assets/js/3.69e99c43.js"><link rel="prefetch" href="/storehouse-page/assets/js/30.6559a30b.js"><link rel="prefetch" href="/storehouse-page/assets/js/31.74e6d4b3.js"><link rel="prefetch" href="/storehouse-page/assets/js/32.e2475ea0.js"><link rel="prefetch" href="/storehouse-page/assets/js/33.501c4d1e.js"><link rel="prefetch" href="/storehouse-page/assets/js/34.15bad241.js"><link rel="prefetch" href="/storehouse-page/assets/js/35.75390ab1.js"><link rel="prefetch" href="/storehouse-page/assets/js/36.d0c5ae50.js"><link rel="prefetch" href="/storehouse-page/assets/js/37.dd6b45ed.js"><link rel="prefetch" href="/storehouse-page/assets/js/38.b55a1d80.js"><link rel="prefetch" href="/storehouse-page/assets/js/39.3d9d3882.js"><link rel="prefetch" href="/storehouse-page/assets/js/4.e30ce7f4.js"><link rel="prefetch" href="/storehouse-page/assets/js/40.90fe91d1.js"><link rel="prefetch" href="/storehouse-page/assets/js/41.7486baac.js"><link rel="prefetch" href="/storehouse-page/assets/js/43.e648ad8f.js"><link rel="prefetch" href="/storehouse-page/assets/js/44.dcaf2a1a.js"><link rel="prefetch" href="/storehouse-page/assets/js/45.c124e1b8.js"><link rel="prefetch" href="/storehouse-page/assets/js/46.3aac698c.js"><link rel="prefetch" href="/storehouse-page/assets/js/47.22d1fdc6.js"><link rel="prefetch" href="/storehouse-page/assets/js/48.c0a28343.js"><link rel="prefetch" href="/storehouse-page/assets/js/49.07e1fef7.js"><link rel="prefetch" href="/storehouse-page/assets/js/5.fb35a609.js"><link rel="prefetch" href="/storehouse-page/assets/js/50.17411fee.js"><link rel="prefetch" href="/storehouse-page/assets/js/51.b4061365.js"><link rel="prefetch" href="/storehouse-page/assets/js/52.2c849d22.js"><link rel="prefetch" href="/storehouse-page/assets/js/53.9a1e4174.js"><link rel="prefetch" href="/storehouse-page/assets/js/54.1dab38d9.js"><link rel="prefetch" href="/storehouse-page/assets/js/55.c67f9976.js"><link rel="prefetch" href="/storehouse-page/assets/js/56.b99f35c8.js"><link rel="prefetch" href="/storehouse-page/assets/js/57.6db07bc1.js"><link rel="prefetch" href="/storehouse-page/assets/js/58.57735da4.js"><link rel="prefetch" href="/storehouse-page/assets/js/59.af46e6af.js"><link rel="prefetch" href="/storehouse-page/assets/js/6.1a017389.js"><link rel="prefetch" href="/storehouse-page/assets/js/60.eb81abd1.js"><link rel="prefetch" href="/storehouse-page/assets/js/61.6a32d392.js"><link rel="prefetch" href="/storehouse-page/assets/js/62.f4bac137.js"><link rel="prefetch" href="/storehouse-page/assets/js/63.2da37952.js"><link rel="prefetch" href="/storehouse-page/assets/js/64.70acdaaa.js"><link rel="prefetch" href="/storehouse-page/assets/js/65.199df4fb.js"><link rel="prefetch" href="/storehouse-page/assets/js/66.74573485.js"><link rel="prefetch" href="/storehouse-page/assets/js/67.185c9f42.js"><link rel="prefetch" href="/storehouse-page/assets/js/68.9565a3b6.js"><link rel="prefetch" href="/storehouse-page/assets/js/69.e2548b9a.js"><link rel="prefetch" href="/storehouse-page/assets/js/7.536fb0bb.js"><link rel="prefetch" href="/storehouse-page/assets/js/70.71cdcedd.js"><link rel="prefetch" href="/storehouse-page/assets/js/71.aa7a4c0b.js"><link rel="prefetch" href="/storehouse-page/assets/js/72.bff5b87c.js"><link rel="prefetch" href="/storehouse-page/assets/js/73.47cd1370.js"><link rel="prefetch" href="/storehouse-page/assets/js/74.94d256f5.js"><link rel="prefetch" href="/storehouse-page/assets/js/8.639b5dff.js"><link rel="prefetch" href="/storehouse-page/assets/js/9.6aff79fc.js">
+    <link rel="stylesheet" href="/storehouse-page/assets/css/0.styles.50cbef9e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/storehouse-page/" class="home-link router-link-active"><img src="./assets/img/logo.png" alt="store house" class="logo"> <span class="site-name can-hide">store house</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/storehouse-page/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/storehouse-page/algorithm/" class="nav-link router-link-active">
+  Algorithm
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Collect" class="dropdown-title"><span class="title">Collect</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/storehouse-page/nodejs/1.pm2原理.html" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/浏览器原理/1.进程架构.html" class="nav-link">
+  浏览器原理
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/网络/1.http-1.0-1.1-2.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/性能优化/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/相关面试题/js/1.new操作符做了什么.html" class="nav-link">
+  相关面试题
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/vue/2.0/1.vue-diff.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/其他/1.base64 编码.html" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/storehouse-page/resume/" class="nav-link">
+  Resume
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/storehouse-page/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/storehouse-page/algorithm/" class="nav-link router-link-active">
+  Algorithm
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Collect" class="dropdown-title"><span class="title">Collect</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/storehouse-page/nodejs/1.pm2原理.html" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/浏览器原理/1.进程架构.html" class="nav-link">
+  浏览器原理
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/网络/1.http-1.0-1.1-2.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/性能优化/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/相关面试题/js/1.new操作符做了什么.html" class="nav-link">
+  相关面试题
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/vue/2.0/1.vue-diff.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/storehouse-page/其他/1.base64 编码.html" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/storehouse-page/resume/" class="nav-link">
+  Resume
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_438-找到字符串中所有字母异位词"><a href="#_438-找到字符串中所有字母异位词" class="header-anchor">#</a> 438.找到字符串中所有字母异位词</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/*
+ * @lc app=leetcode.cn id=438 lang=javascript
+ *
+ * [438] 找到字符串中所有字母异位词
+ */</span>
+
+<span class="token comment">// @lc code=start</span>
+<span class="token comment">/**
+ * @param {string} s
+ * @param {string} p
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">findAnagrams</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s<span class="token punctuation">,</span> p</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">let</span> right <span class="token operator">=</span> <span class="token number">0</span>
+
+  <span class="token keyword">let</span> need <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">let</span> window <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">let</span> match <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> p<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    need<span class="token punctuation">[</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>need<span class="token punctuation">[</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">let</span> needLen <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>need<span class="token punctuation">)</span><span class="token punctuation">.</span>length
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>right <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> cRight <span class="token operator">=</span> s<span class="token punctuation">[</span>right<span class="token punctuation">]</span>
+    <span class="token operator">++</span>right
+
+    <span class="token comment">// 更新计数</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>need<span class="token punctuation">[</span>cRight<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      window<span class="token punctuation">[</span>cRight<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>window<span class="token punctuation">[</span>cRight<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">[</span>cRight<span class="token punctuation">]</span> <span class="token operator">===</span> need<span class="token punctuation">[</span>cRight<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 子串全匹配到了就增加匹配计数</span>
+        <span class="token operator">++</span>match
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 字符出现次数数匹配到了，判断结果并缩减窗口</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>match <span class="token operator">===</span> needLen<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 全部匹配到了，将该串的start索引添加到结果数组中</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>right <span class="token operator">-</span> left<span class="token punctuation">)</span> <span class="token operator">===</span> p<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">let</span> cLeft <span class="token operator">=</span> s<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
+      <span class="token operator">++</span>left
+
+      <span class="token comment">// 缩减窗口时计数也要随着更新</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>need<span class="token punctuation">[</span>cLeft<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">[</span>cLeft<span class="token punctuation">]</span> <span class="token operator">===</span> need<span class="token punctuation">[</span>cLeft<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token operator">--</span>match
+        <span class="token punctuation">}</span>
+        <span class="token operator">--</span>window<span class="token punctuation">[</span>cLeft<span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// @lc code=end</span>
+
+
+<span class="token comment">// @after-stub-for-debug-begin</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> findAnagrams<span class="token punctuation">;</span>
+<span class="token comment">// @after-stub-for-debug-end</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/storehouse-page/assets/js/app.89c6b4d2.js" defer></script><script src="/storehouse-page/assets/js/2.36872be9.js" defer></script><script src="/storehouse-page/assets/js/42.35b07141.js" defer></script>
+  </body>
+</html>
